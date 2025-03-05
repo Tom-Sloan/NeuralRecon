@@ -2,6 +2,10 @@ from yacs.config import CfgNode as CN
 
 _C = CN()
 
+# Add OUTPUT_DIR to the root config
+_C.OUTPUT_DIR = './results'  # Default output directory
+_C.PROJ_MATRIX = None
+
 _C.MODE = 'train'
 _C.DATASET = 'scannet'
 _C.BATCH_SIZE = 1
